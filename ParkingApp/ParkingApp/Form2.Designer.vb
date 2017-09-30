@@ -22,13 +22,14 @@ Partial Class Form2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form2))
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(30, 214)
+        Me.Button1.Location = New System.Drawing.Point(24, 29)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(118, 23)
         Me.Button1.TabIndex = 0
@@ -37,7 +38,7 @@ Partial Class Form2
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(175, 214)
+        Me.Button2.Location = New System.Drawing.Point(172, 29)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(108, 23)
         Me.Button2.TabIndex = 1
@@ -48,11 +49,12 @@ Partial Class Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(309, 277)
+        Me.ClientSize = New System.Drawing.Size(317, 87)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form2"
-        Me.Text = "Form2"
+        Me.Text = "Select Parking Type"
         Me.ResumeLayout(False)
 
     End Sub
